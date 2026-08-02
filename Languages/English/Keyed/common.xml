@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <SPF.SettingsTitle>Soundpacks Framework</SPF.SettingsTitle>
+
+    <SPF.ActivePackNone>Active soundpack: None (vanilla/mod audio)</SPF.ActivePackNone>
+    <SPF.ActivePack>Active soundpack: {0}</SPF.ActivePack>
+    <SPF.RestartRequired>Restart Rimworld to apply your soundpack selection.</SPF.RestartRequired>
+    <SPF.OpenManager>Open Soundpack Manager</SPF.OpenManager>
+
+    <SPF.New>New</SPF.New>
+    <SPF.Import>Import…</SPF.Import>
+    <SPF.Refresh>Refresh</SPF.Refresh>
+    <SPF.NoPackSelected>Select a soundpack on the left to see its details.</SPF.NoPackSelected>
+    <SPF.FieldId>ID</SPF.FieldId>
+    <SPF.FieldName>Name</SPF.FieldName>
+    <SPF.FieldAuthor>Author</SPF.FieldAuthor>
+    <SPF.FieldVersion>Version</SPF.FieldVersion>
+    <SPF.FieldDescription>Description</SPF.FieldDescription>
+    <SPF.FieldAttribution>Attribution</SPF.FieldAttribution>
+    <SPF.FieldLicense>License</SPF.FieldLicense>
+    <SPF.FieldSupportedVersions>Supported Rimworld versions (comma-separated)</SPF.FieldSupportedVersions>
+    <SPF.FieldSourceMod>Source mod: {0} ({1})</SPF.FieldSourceMod>
+    <SPF.MappingCount>{0} mapping(s)</SPF.MappingCount>
+    <SPF.NoDiagnostics>No diagnostics.</SPF.NoDiagnostics>
+    <SPF.SelectPack>Select</SPF.SelectPack>
+    <SPF.SelectNone>Select None</SPF.SelectNone>
+    <SPF.Edit>Edit</SPF.Edit>
+    <SPF.Duplicate>Duplicate</SPF.Duplicate>
+    <SPF.Export>Export…</SPF.Export>
+    <SPF.Delete>Delete</SPF.Delete>
+    <SPF.ConfirmDelete>Delete soundpack "{0}"? It will be moved to Backups.</SPF.ConfirmDelete>
+    <SPF.ImportSucceeded>Imported soundpack "{0}".</SPF.ImportSucceeded>
+    <SPF.ImportCancelled>Import cancelled.</SPF.ImportCancelled>
+    <SPF.ExportReadOnlyBlocked>This pack is read-only (mod-provided). Duplicate it first, then export the copy.</SPF.ExportReadOnlyBlocked>
+    <SPF.ExportSucceeded>Exported to {0}.</SPF.ExportSucceeded>
+    <SPF.ExportSucceededWithWarnings>Exported to {0} with warnings:</SPF.ExportSucceededWithWarnings>
+    <SPF.ConfirmOverwrite>{0} already exists. Overwrite it?</SPF.ConfirmOverwrite>
+
+    <SPF.TabMetadata>Metadata</SPF.TabMetadata>
+    <SPF.TabMappings>Mappings</SPF.TabMappings>
+    <SPF.TabFiles>Files</SPF.TabFiles>
+    <SPF.NoTargetSelected>Select a SoundDef (and sub-sound, if it has more than one) on the left.</SPF.NoTargetSelected>
+    <SPF.PreviewVolume>Preview volume: {0}%</SPF.PreviewVolume>
+    <SPF.PreviewVanilla>Preview vanilla/current audio</SPF.PreviewVanilla>
+    <SPF.PreviewPlay>Play preview</SPF.PreviewPlay>
+    <SPF.PreviewStop>Stop preview</SPF.PreviewStop>
+    <SPF.PreviewUnavailableNoMap>Preview unavailable: this sound is map/world-anchored and needs an active game with a map loaded to preview.</SPF.PreviewUnavailableNoMap>
+    <SPF.FrameworkCueNote>This is a framework-owned cue with no audio by default. Mapping it below is the only way to make it play.</SPF.FrameworkCueNote>
+    <SPF.OverrideVolumeRange>Override this sound's volume range</SPF.OverrideVolumeRange>
+    <SPF.Copy>Copy</SPF.Copy>
+    <SPF.Paste>Paste</SPF.Paste>
+    <SPF.AddFileToMapping>Add file(s)…</SPF.AddFileToMapping>
+    <SPF.MappingHasNoFiles>No files assigned to this target yet.</SPF.MappingHasNoFiles>
+    <SPF.FileVolume>Volume: {0}%</SPF.FileVolume>
+    <SPF.Reset>R</SPF.Reset>
+    <SPF.ResetVolumeTooltip>Reset volume to 100%</SPF.ResetVolumeTooltip>
+    <SPF.AddFilesToPool>Add file(s)…</SPF.AddFilesToPool>
+    <SPF.UsedByMappings>used by {0}</SPF.UsedByMappings>
+    <SPF.Save>Save</SPF.Save>
+    <SPF.Cancel>Cancel</SPF.Cancel>
+
+    <SPF.PickerCurrentDir>Current folder: {0}</SPF.PickerCurrentDir>
+    <SPF.PickerGo>Go</SPF.PickerGo>
+    <SPF.PickerError>Error: {0}</SPF.PickerError>
+    <SPF.PickerConfirm>Confirm</SPF.PickerConfirm>
+    <SPF.PickerCancel>Cancel</SPF.PickerCancel>
+    <SPF.PickerNothingSelected>Select at least one item first.</SPF.PickerNothingSelected>
+
+    <SPF.ConflictTitle>A pack with ID "{0}" is already installed. What would you like to do?</SPF.ConflictTitle>
+    <SPF.ConflictReplace>Replace existing pack (previous version is kept in Backups)</SPF.ConflictReplace>
+    <SPF.ConflictDuplicate>Install as a new copy (new ID)</SPF.ConflictDuplicate>
+    <SPF.ConflictCancel>Cancel import</SPF.ConflictCancel>
+</LanguageData>

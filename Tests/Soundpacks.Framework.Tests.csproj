@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B6C2F0A-9B0E-4E7A-8B77-4B0E6E9A0C11}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Soundpacks_Framework.Tests</RootNamespace>
+    <AssemblyName>Soundpacks Framework Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--
+      Only platform-independent source files are linked here (no Verse/UnityEngine/Assembly-CSharp
+      dependency), so these tests run as a plain console app without RimWorld installed
+      (Plan.md section 28). Runtime/UI/Validation-against-DefDatabase behavior is covered by the
+      manual in-game test matrix instead.
+    -->
+    <Compile Include="..\1.6\source\Serialization\Json\JsonValue.cs">
+      <Link>Source\Serialization\Json\JsonValue.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Serialization\Json\JsonParser.cs">
+      <Link>Source\Serialization\Json\JsonParser.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Serialization\Json\JsonWriter.cs">
+      <Link>Source\Serialization\Json\JsonWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Serialization\ManifestMigrator.cs">
+      <Link>Source\Serialization\ManifestMigrator.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Serialization\SoundpackManifestSerializer.cs">
+      <Link>Source\Serialization\SoundpackManifestSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Models\SoundpackManifest.cs">
+      <Link>Source\Models\SoundpackManifest.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Storage\SoundpackPathPolicy.cs">
+      <Link>Source\Storage\SoundpackPathPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Storage\AtomicFileWriter.cs">
+      <Link>Source\Storage\AtomicFileWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\SoundpackLimits.cs">
+      <Link>Source\SoundpackLimits.cs</Link>
+    </Compile>
+    <Compile Include="..\1.6\source\Discovery\SoundpackContentDetector.cs">
+      <Link>Source\Discovery\SoundpackContentDetector.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="JsonTests.cs" />
+    <Compile Include="ManifestSerializerTests.cs" />
+    <Compile Include="PathPolicyTests.cs" />
+    <Compile Include="AtomicFileWriterTests.cs" />
+    <Compile Include="SoundpackContentDetectorTests.cs" />
+    <Compile Include="TestRunner.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

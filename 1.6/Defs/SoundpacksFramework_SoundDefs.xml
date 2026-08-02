@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <SoundDef>
+    <defName>SoundpacksFramework_Startup</defName>
+    <context>Any</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Silence">
+            <durationRange>0~0</durationRange>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>SoundpacksFramework_Quit</defName>
+    <context>Any</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Silence">
+            <durationRange>0~0</durationRange>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>
